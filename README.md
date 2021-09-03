@@ -8,6 +8,8 @@ List of differents screens of the App.
 
 * **List of Series**. Show a list of series and custom search from [TVMaze API](https://www.tvmaze.com/api).
 
+* **Favorites Series**. (No Completed) Show a list of favorite series saved in local DB.
+
 * **Series Details**. Series details that contains: Name, Poster, Days and time during which the series airs, Genres, Summary, List of episodes separated by season.
 
 * **Episode Details** Show the details of an episode containing: Name, Number, Season, Summary, Image, if there is one.
