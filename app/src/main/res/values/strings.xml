@@ -1,0 +1,24 @@
+<resources>
+
+    //Main Titles
+    <string name="app_name">SeriesApp</string>
+    <string name="title_series">Series</string>
+    <string name="title_favorites">Favorites</string>
+
+    <string name="title_activity_details_series">Details of Series</string>
+    <string name="title_activity_main">Episode</string>
+
+    <string name="search">Search by name</string>
+
+    <string name="poster_image_content_description">poster image</string>
+    <string name="clock_icon_content_description">Clock Icon</string>
+    <string name="summary">Summary</string>
+    <string name="season">Season</string>
+    <string name="episode">Episode</string>
+    <string name="seasons">Seasons</string>
+
+
+
+
+
+</resources>
