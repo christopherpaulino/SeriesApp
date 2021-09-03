@@ -36,17 +36,16 @@ List of differents screens of the App.
 
 # Screenshots
 
-<!-- <div style={"display:flex;"}>
- <img src="https://user-images.githubusercontent.com/38010591/128784211-e8ba1970-a404-4243-9628-614b34ae385f.jpg" width="30%" height="30%">
-<img src="https://user-images.githubusercontent.com/38010591/128784214-98ebb03d-0b91-494f-a574-954aa0a7b62c.jpg" width="30%" height="30%">
- <img src="https://user-images.githubusercontent.com/38010591/128784215-6e675dfd-9948-4022-a75a-4390da81a4bf.jpg" width="30%" height="30%">
+<div style={"display:flex;"}>
+ <img src="https://user-images.githubusercontent.com/38010591/132074867-fbe26f4e-ed19-4fce-9895-4f3acd5d3215.jpg" width="30%" height="30%">
+<img src="https://user-images.githubusercontent.com/38010591/132074873-adc73621-f59a-45d4-8461-a7aaa4b3e617.jpg" width="30%" height="30%">
+ <img src="https://user-images.githubusercontent.com/38010591/132074875-4fdaea67-e5cc-48b9-9bd1-f4cf37568ee4.jpg" width="30%" height="30%">
 </div>
 <br/>
 <br/>
 <div style={"display:flex;"}>
- <img src="https://user-images.githubusercontent.com/38010591/128784216-9a068513-f5a8-41d4-8fdc-664c961ea890.jpg" width="30%" height="30%">
-<img src="https://user-images.githubusercontent.com/38010591/128784217-bb2ac2e3-cfe8-4186-9415-2f25fc9feb65.jpg" width="30%" height="30%">
- <img src="https://user-images.githubusercontent.com/38010591/128784218-4834666f-7f46-4b44-b146-305a9b626ec3.jpg" width="30%" height="30%">
+ <img src="https://user-images.githubusercontent.com/38010591/132074879-51679f36-65ac-4db5-9f51-18cc7cebd44e.jpg" width="30%" height="30%">
+<img src="https://user-images.githubusercontent.com/38010591/132074880-1b753198-c2ab-4b93-99ea-2695d7a1505f.jpg" width="30%" height="30%">
 </div>
-<hr/> -->
+<hr/>
 
