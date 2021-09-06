@@ -1,6 +1,5 @@
 package com.frontic.seriesapp.ui.detailsSeries
 
-import android.content.Context
 import com.frontic.seriesapp.models.SeasonAdapterItem
 
 class DetailsSeriesContract {

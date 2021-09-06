@@ -10,6 +10,11 @@ import com.frontic.seriesapp.databinding.ActivityDetailsEpisodeBinding
 import com.frontic.seriesapp.models.Episode
 import com.frontic.seriesapp.ui.base.BaseActivity
 
+/**
+ * This class represent the View in Details Episode functionality.
+ *
+ * @author Christopher Paulino
+ */
 class DetailsEpisodeActivity : BaseActivity() {
 
     private lateinit var binding: ActivityDetailsEpisodeBinding
@@ -29,15 +34,6 @@ class DetailsEpisodeActivity : BaseActivity() {
 
         initializeVariable()
         loadData()
-
-//        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-//        val viewPager: ViewPager = findViewById(R.id.view_pager)
-//        viewPager.adapter = sectionsPagerAdapter
-//        val tabs: TabLayout = findViewById(R.id.tabs)
-//        tabs.setupWithViewPager(viewPager)
-//        val fab: FloatingActionButton = findViewById(R.id.fab)
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -61,8 +57,8 @@ class DetailsEpisodeActivity : BaseActivity() {
             titleTv.text = episode.name
             seasonTv.text = seasonName
             episodeNumberTv.text = "${getString(R.string.episode)}: ${episode.number}"
-            timeTv.text = episode.airtime ?: ""
-            dateTv.text = episode.airdate ?: ""
+            timeTv.text = episode.airtime
+            dateTv.text = episode.airdate
             summaryTv.text = Html.fromHtml(episode.summary, Html.FROM_HTML_MODE_LEGACY)
 
             GlideApi(this@DetailsEpisodeActivity).loadImageFromUrl(

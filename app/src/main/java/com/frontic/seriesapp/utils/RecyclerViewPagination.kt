@@ -5,6 +5,9 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import androidx.recyclerview.widget.RecyclerView.SCROLL_STATE_IDLE
 
+/**
+ * This class allows to manage the scroll action in a recycler view for implementing paging.
+ */
 abstract class RecyclerViewPagination(recyclerView: RecyclerView) :
     RecyclerView.OnScrollListener() {
 
@@ -19,13 +22,12 @@ abstract class RecyclerViewPagination(recyclerView: RecyclerView) :
         super.onScrollStateChanged(recyclerView, newState)
         if (newState == SCROLL_STATE_IDLE) {
 
-            val visibleItemCount = layoutManager!!.childCount //4
-            val totalItemCount = layoutManager.itemCount //245
-            var firstVisibleItemPosition =
-                (layoutManager as LinearLayoutManager).findFirstVisibleItemPosition() //3 (index)
+            val visibleItemCount = layoutManager!!.childCount
+            val totalItemCount = layoutManager.itemCount
+            val firstVisibleItemPosition =
+                (layoutManager as LinearLayoutManager).findFirstVisibleItemPosition()
 
             if ((visibleItemCount + firstVisibleItemPosition) >= totalItemCount && firstVisibleItemPosition >= 0) {
-
                 if (!isLoading() && !isLastPage()) {
                     loadMore()
                 }

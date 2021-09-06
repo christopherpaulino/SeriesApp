@@ -10,6 +10,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/**
+ * This class represent the Presenter in Details Series functionality.
+ *
+ * @author Christopher Paulino
+ */
 class DetailsSeriesPresenter(private val view: DetailsSeriesContract.View) :
     DetailsSeriesContract.Presenter {
 
@@ -53,7 +58,7 @@ class DetailsSeriesPresenter(private val view: DetailsSeriesContract.View) :
             }
 
             override fun onFailure(call: Call<List<Season>>, t: Throwable) {
-
+                //TODO: Implement failure action
             }
         })
     }

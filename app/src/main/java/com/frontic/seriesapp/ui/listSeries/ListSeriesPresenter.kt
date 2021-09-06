@@ -12,15 +12,13 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/**
+ * This class represent the Presenter in List Series functionality.
+ *
+ * @author Christopher Paulino
+ */
 class ListSeriesPresenter(val view: ListSeriesContract.View, val context: Context) :
     ListSeriesContract.Presenter {
-
-    private val job = Job()
-    private val scopeIO = CoroutineScope(job + Dispatchers.IO)
-
-    override fun destroy() {
-        job.cancel()
-    }
 
     override fun getSeries(page: Int) {
         view.showLoading(true)
@@ -88,15 +86,4 @@ class ListSeriesPresenter(val view: ListSeriesContract.View, val context: Contex
             false
         }
     }
-
-//        /**
-//         * Save genres to local database
-//         */
-//        private fun saveGenres(list: List<Genre>) {
-//            scopeIO.launch {
-//                for (i in list) {
-//                    AppDatabase.getInstance(context).genreDao.insert(i)
-//                }
-//            }
-//        }
 }

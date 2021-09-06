@@ -16,9 +16,7 @@
     <string name="season">Season</string>
     <string name="episode">Episode</string>
     <string name="seasons">Seasons</string>
-
-
-
+    <string name="alert">Alert</string>
 
 
 </resources>

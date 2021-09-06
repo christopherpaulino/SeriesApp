@@ -18,6 +18,11 @@ import com.frontic.seriesapp.ui.base.BaseFragment
 import com.frontic.seriesapp.ui.detailsSeries.DetailsSeriesActivity
 import com.frontic.seriesapp.utils.RecyclerViewPagination
 
+/**
+ * This class represent the View in List Series functionality.
+ *
+ * @author Christopher Paulino
+ */
 class ListSeriesFragment : BaseFragment(), ListSeriesContract.View,
     ListSeriesAdapter.AdapterListener {
 
@@ -42,19 +47,8 @@ class ListSeriesFragment : BaseFragment(), ListSeriesContract.View,
         return root
     }
 
-
-    override fun onDetach() {
-        super.onDetach()
-        presenter.destroy()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        presenter.destroy()
-    }
-
     override fun initializeVariables(view: View) {
-        super.initializeVariables(view)
+
         presenter = ListSeriesPresenter(this, requireContext())
 
         adapter = context?.let { context ->
@@ -65,8 +59,6 @@ class ListSeriesFragment : BaseFragment(), ListSeriesContract.View,
         progressBar = view.findViewById(R.id.loading_pbar)
         recyclerView = view.findViewById(R.id.list_series_rv)
         recyclerView.adapter = adapter
-
-//        noNetworkView = view.findViewById(R.id.no_internet_screen)
 
         swipeRefresher.setOnRefreshListener {
             presenter.getSeries(initialPage)
@@ -162,11 +154,10 @@ class ListSeriesFragment : BaseFragment(), ListSeriesContract.View,
 
     override fun showNoNetworkConnected(t: Boolean) {
         recyclerView.visibility = if (t) View.GONE else View.VISIBLE
-//        noNetworkView.visibility = if (t) View.VISIBLE else View.GONE
     }
 
     override fun showMessage(message: String) {
-//        showAlertMessage(message)
+        showDialog(message)
     }
 
     companion object {
